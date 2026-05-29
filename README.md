@@ -20,10 +20,11 @@ A web application to search, view, and compare motorcycle specifications side-by
 1. Go to [supabase.com](https://supabase.com) → **New Project** (pick a nearby region, e.g. Singapore)
 2. Set a database password (save it)
 3. Wait ~2 minutes for the database to provision
-4. Open **Project Settings → Database → Connection string**:
-   - Copy the **Connection pooler** URI (Transaction mode, port 6543) → use as `DATABASE_URL`
-   - Copy the **Direct connection** URI (port 5432) → use as `DIRECT_URL`
+4. Open **Project Settings → Database → Connection string** — copy from the **pooler** (hostname ends with `.pooler.supabase.com`):
+   - **Transaction pooler** URI (port 6543) → use as `DATABASE_URL`
+   - **Session pooler** URI (port 5432) → use as `DIRECT_URL`
    - Replace `[YOUR-PASSWORD]` with the password you set
+   - ⚠️ Do **not** use "Direct connection" (`db.[ref].supabase.co:5432`) — it is IPv6-only on the free tier and will not work on IPv4-only hosts like Render
 
 ### 2. Backend (Server)
 

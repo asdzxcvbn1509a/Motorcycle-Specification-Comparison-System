@@ -60,10 +60,15 @@ Verify `.env` files are **not** committed (they should be ignored by `.gitignore
 3. Set a strong database password — **save it** (you cannot recover it)
 4. Wait ~2 minutes for the database to provision
 5. Go to **Project Settings → Database → Connection string**
-6. Copy two URIs:
-   - **Connection pooler** (Transaction mode, port **6543**) → this is `DATABASE_URL`
-   - **Direct connection** (port **5432**) → this is `DIRECT_URL`
+6. Copy two URIs — **both must come from the pooler** (hostname ends with `.pooler.supabase.com`):
+   - **Transaction pooler** (port **6543**) → this is `DATABASE_URL`
+   - **Session pooler** (port **5432**) → this is `DIRECT_URL`
    - Replace `[YOUR-PASSWORD]` in both with the password from step 3
+
+> ⚠️ **Do NOT use "Direct connection"** (`db.[ref].supabase.co:5432`).
+> On Supabase free tier that endpoint is IPv6-only, and Render free tier cannot reach IPv6
+> hosts — your build will fail with `P1001: Can't reach database server`.
+> Always use the Session pooler URL for `DIRECT_URL` when deploying to Render / Railway / Fly.io.
 
 Keep these two strings ready — you will paste them into Render in the next step.
 
@@ -214,6 +219,18 @@ If anything fails, check:
 ---
 
 ## Common issues
+
+### "P1001: Can't reach database server at db.xxx.supabase.co:5432" during Render build
+You copied the **Direct connection** URL into `DIRECT_URL`. That endpoint is IPv6-only on Supabase free tier, and Render free tier does not have IPv6 outbound.
+
+**Fix:** Use the **Session pooler** URL instead (port 5432, host ends with `.pooler.supabase.com`). Both `DATABASE_URL` and `DIRECT_URL` should now use `*.pooler.supabase.com`:
+
+| Env var | Source | Port |
+|---|---|---|
+| `DATABASE_URL` | Transaction pooler | 6543 |
+| `DIRECT_URL` | Session pooler | 5432 |
+
+Update `DIRECT_URL` in **Render → Environment → Save Changes** → Render redeploys automatically.
 
 ### "CORS policy: No 'Access-Control-Allow-Origin' header"
 - `CORS_ORIGIN` on Render does not match your Vercel URL exactly (check `https://` vs `http://`, no trailing `/`)
