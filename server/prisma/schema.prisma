@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  username     String   @unique @db.VarChar(50)
+  passwordHash String   @map("password_hash") @db.VarChar(255)
+  role         String   @default("admin") @db.VarChar(20)
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  @@map("users")
+}
+
+enum MotorcycleType {
+  Sport
+  Naked
+  Adventure
+  Touring
+  Cruiser
+  Scooter
+}
+
+model Motorcycle {
+  id              Int            @id @default(autoincrement())
+  brand           String         @db.VarChar(50)
+  model           String         @db.VarChar(100)
+  year            Int
+  type            MotorcycleType
+  price           Decimal        @db.Decimal(10, 2)
+  imageUrl        String?        @map("image_url") @db.VarChar(500)
+
+  engineCc        Int            @map("engine_cc")
+  engineType      String?        @map("engine_type") @db.VarChar(100)
+  horsepower      Decimal?       @db.Decimal(6, 2)
+  torque          Decimal?       @db.Decimal(6, 2)
+  transmission    String?        @db.VarChar(100)
+
+  frontBrake      String?        @map("front_brake") @db.VarChar(100)
+  rearBrake       String?        @map("rear_brake") @db.VarChar(100)
+  frontSuspension String?        @map("front_suspension") @db.VarChar(100)
+  rearSuspension  String?        @map("rear_suspension") @db.VarChar(100)
+
+  weightKg        Decimal?       @map("weight_kg") @db.Decimal(6, 2)
+  seatHeightMm    Int?           @map("seat_height_mm")
+  fuelCapacityL   Decimal?       @map("fuel_capacity_l") @db.Decimal(4, 2)
+
+  description     String?        @db.Text
+  createdAt       DateTime       @default(now()) @map("created_at")
+  updatedAt       DateTime       @updatedAt @map("updated_at")
+
+  @@index([brand])
+  @@index([type])
+  @@index([engineCc])
+  @@index([price])
+  @@map("motorcycles")
+}

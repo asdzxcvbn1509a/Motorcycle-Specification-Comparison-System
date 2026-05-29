@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "search": "Browse",
+    "compare": "Compare",
+    "favorites": "Favorites",
+    "admin": "Admin",
+    "dashboard": "Dashboard",
+    "logout": "Log out",
+    "adminLogin": "Admin Login"
+  },
+  "common": {
+    "loading": "Loading...",
+    "noResults": "No data",
+    "noResultsFiltered": "No motorcycles match your filters",
+    "tryClear": "Try clearing the filters",
+    "backToHome": "Back to search",
+    "cancel": "Cancel",
+    "clear": "Clear all",
+    "save": "Save"
+  },
+  "home": {
+    "pageTitle": "Browse motorcycles",
+    "heroBadge": "{{count}} models to compare",
+    "heroTitle": "Find Your",
+    "heroTitleHighlight": "Perfect Ride",
+    "heroSubtitle": "Search, view specs, and compare motorcycles — data from official Thai manufacturers",
+    "heroCta": "Start browsing",
+    "categories": "Categories",
+    "recentlyViewed": "Recently viewed",
+    "recentlyViewedHint": "Models you opened recently",
+    "featured": "Featured",
+    "featuredHint": "Premium picks worth a look",
+    "all": "All models",
+    "allHint": "Search and filter as you like",
+    "searchPlaceholder": "Search model or brand: Ninja, CBR, Yamaha...",
+    "foundCount": "Found {{count}} models",
+    "page": "Page {{page}}/{{total}}"
+  },
+  "sort": {
+    "default": "Recommended",
+    "priceAsc": "Lowest price first",
+    "priceDesc": "Highest price first",
+    "hpDesc": "Most horsepower first",
+    "ccDesc": "Largest CC first",
+    "ccAsc": "Smallest CC first",
+    "yearDesc": "Newest year first"
+  },
+  "filter": {
+    "title": "Filters",
+    "brand": "Brand",
+    "type": "Type",
+    "engineSize": "Engine size (CC)",
+    "priceRange": "Price range (THB)",
+    "min": "Min",
+    "max": "Max"
+  },
+  "detail": {
+    "price": "Price",
+    "engine": "Engine",
+    "brakesSuspension": "Brakes & Suspension",
+    "dimensionsCapacity": "Dimensions & Capacity",
+    "performanceProfile": "Performance Profile",
+    "similarBikes": "Similar bikes",
+    "addToCompare": "Add to compare",
+    "addedToCompare": "Selected",
+    "addToFavorites": "Favorite",
+    "inFavorites": "Favorited",
+    "toComparePage": "Compare page",
+    "engineCc": "Engine size",
+    "engineType": "Engine type",
+    "horsepower": "Horsepower",
+    "torque": "Torque",
+    "transmission": "Transmission",
+    "frontBrake": "Front brake",
+    "rearBrake": "Rear brake",
+    "frontSuspension": "Front suspension",
+    "rearSuspension": "Rear suspension",
+    "weight": "Weight",
+    "seatHeight": "Seat height",
+    "fuelCapacity": "Fuel capacity",
+    "notFound": "Motorcycle not found"
+  },
+  "compare": {
+    "pageTitle": "Compare specifications",
+    "subtitle": "Pick 2-4 bikes for a side-by-side comparison · best values are highlighted",
+    "minSelectHint": "Pick at least 2 bikes to start comparing",
+    "selectedOf": "Selected {{count}}/4",
+    "goSelect": "Pick bikes",
+    "copyLink": "Copy link",
+    "copied": "Copied",
+    "print": "Print",
+    "scrollHint": "Scroll horizontally to see all bikes",
+    "bestValue": "Best",
+    "section": {
+      "overview": "Overview",
+      "engine": "Engine",
+      "brakes": "Brakes & Suspension",
+      "dimensions": "Dimensions & Capacity"
+    },
+    "overview": "Overview",
+    "row": {
+      "item": "Spec",
+      "brand": "Brand",
+      "model": "Model",
+      "year": "Year",
+      "type": "Type",
+      "price": "Price",
+      "engineSize": "Engine (cc)",
+      "engineType": "Engine type",
+      "horsepower": "Horsepower",
+      "torque": "Torque",
+      "transmission": "Transmission",
+      "frontBrake": "Front brake",
+      "rearBrake": "Rear brake",
+      "frontSuspension": "Front suspension",
+      "rearSuspension": "Rear suspension",
+      "weight": "Weight",
+      "seatHeight": "Seat height",
+      "fuelCapacity": "Fuel capacity"
+    }
+  },
+  "favorites": {
+    "pageTitle": "Favorite bikes",
+    "subtitle": "{{count}} saved bikes (stored on your device only)",
+    "empty": "No favorites yet",
+    "emptyHint": "Tap the heart icon on a card to save it"
+  },
+  "card": {
+    "compare": "Compare",
+    "addFavorite": "Add to favorites",
+    "removeFavorite": "Remove from favorites"
+  },
+  "compareBar": {
+    "selectedLabel": "Selected",
+    "compareBtn": "Compare"
+  },
+  "type": {
+    "Sport": "Sport",
+    "Naked": "Naked",
+    "Adventure": "Adventure",
+    "Touring": "Touring",
+    "Cruiser": "Cruiser",
+    "Scooter": "Scooter"
+  },
+  "radar": {
+    "horsepower": "Horsepower",
+    "torque": "Torque",
+    "engineSize": "Engine size",
+    "fuelCapacity": "Fuel capacity",
+    "lightWeight": "Lightness",
+    "note": "Normalized 0-100 (Lightness: higher = lighter)"
+  },
+  "app": {
+    "routeNotFound": "404 - Page not found"
+  }
+}

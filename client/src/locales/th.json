@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "menu": "เมนู",
+    "search": "ค้นหา",
+    "compare": "เปรียบเทียบ",
+    "favorites": "ชื่นชอบ",
+    "admin": "Admin",
+    "dashboard": "Dashboard",
+    "logout": "ออกจากระบบ",
+    "adminLogin": "เข้าสู่ระบบ Admin"
+  },
+  "common": {
+    "loading": "กำลังโหลด...",
+    "noResults": "ไม่พบข้อมูล",
+    "noResultsFiltered": "ไม่พบรถที่ตรงกับเงื่อนไข",
+    "tryClear": "ลองล้างตัวกรองดู",
+    "backToHome": "กลับหน้าค้นหา",
+    "cancel": "ยกเลิก",
+    "clear": "ล้างทั้งหมด",
+    "save": "บันทึก"
+  },
+  "home": {
+    "pageTitle": "ค้นหารถมอเตอร์ไซค์",
+    "heroBadge": "{{count}} รุ่นพร้อมเปรียบเทียบ",
+    "heroTitle": "Find Your",
+    "heroTitleHighlight": "Perfect Ride",
+    "heroSubtitle": "ค้นหา ดูสเปค และเปรียบเทียบรถมอเตอร์ไซค์ที่ใช่สำหรับคุณ — ข้อมูลจากผู้ผลิตทางการไทย",
+    "heroCta": "เริ่มค้นหา",
+    "categories": "หมวดหมู่",
+    "recentlyViewed": "ดูล่าสุด",
+    "recentlyViewedHint": "รุ่นที่คุณเปิดดูล่าสุด",
+    "featured": "รุ่นเด่น",
+    "featuredHint": "Premium picks ที่น่าจับตามอง",
+    "all": "ทั้งหมด",
+    "allHint": "ค้นหา + กรองตามที่ต้องการ",
+    "searchPlaceholder": "ค้นหารุ่นหรือยี่ห้อ เช่น Ninja, CBR, Yamaha...",
+    "foundCount": "พบทั้งหมด {{count}} รุ่น",
+    "page": "หน้า {{page}}/{{total}}"
+  },
+  "sort": {
+    "default": "แนะนำ",
+    "priceAsc": "ราคาต่ำสุดก่อน",
+    "priceDesc": "ราคาสูงสุดก่อน",
+    "hpDesc": "แรงม้าสูงสุดก่อน",
+    "ccDesc": "CC สูงสุดก่อน",
+    "ccAsc": "CC ต่ำสุดก่อน",
+    "yearDesc": "ปีใหม่สุดก่อน"
+  },
+  "filter": {
+    "title": "ตัวกรอง",
+    "brand": "ยี่ห้อ",
+    "type": "ประเภท",
+    "engineSize": "ขนาดเครื่อง (CC)",
+    "priceRange": "ช่วงราคา (บาท)",
+    "min": "ต่ำสุด",
+    "max": "สูงสุด"
+  },
+  "detail": {
+    "price": "ราคา",
+    "engine": "เครื่องยนต์",
+    "brakesSuspension": "เบรกและช่วงล่าง",
+    "dimensionsCapacity": "มิติและความจุ",
+    "performanceProfile": "โปรไฟล์สมรรถนะ",
+    "similarBikes": "รถที่คล้ายกัน",
+    "addToCompare": "เพิ่มเปรียบเทียบ",
+    "addedToCompare": "เลือกแล้ว",
+    "addToFavorites": "ชื่นชอบ",
+    "inFavorites": "อยู่ในชื่นชอบ",
+    "toComparePage": "หน้าเปรียบเทียบ",
+    "engineCc": "ขนาดเครื่อง",
+    "engineType": "ประเภทเครื่อง",
+    "horsepower": "แรงม้า",
+    "torque": "แรงบิด",
+    "transmission": "ระบบเกียร์",
+    "frontBrake": "เบรกหน้า",
+    "rearBrake": "เบรกหลัง",
+    "frontSuspension": "โช้คหน้า",
+    "rearSuspension": "โช้คหลัง",
+    "weight": "น้ำหนัก",
+    "seatHeight": "ความสูงเบาะ",
+    "fuelCapacity": "ความจุน้ำมัน",
+    "notFound": "ไม่พบรถมอเตอร์ไซค์รุ่นนี้"
+  },
+  "compare": {
+    "pageTitle": "เปรียบเทียบสเปครถ",
+    "subtitle": "เลือก 2-4 คันเพื่อเทียบกันแบบ side-by-side · ค่าที่ดีที่สุดมีไอคอนกำกับ",
+    "minSelectHint": "เลือกรถอย่างน้อย 2 คันเพื่อเริ่มเปรียบเทียบ",
+    "selectedOf": "เลือกแล้ว {{count}}/4",
+    "goSelect": "ไปเลือกรถ",
+    "copyLink": "คัดลอกลิงก์",
+    "copied": "คัดลอกแล้ว",
+    "print": "พิมพ์",
+    "scrollHint": "เลื่อนแนวนอนเพื่อดูทุกคัน",
+    "bestValue": "ดีที่สุด",
+    "section": {
+      "overview": "ภาพรวม",
+      "engine": "เครื่องยนต์",
+      "brakes": "เบรกและช่วงล่าง",
+      "dimensions": "มิติและความจุ"
+    },
+    "overview": "ภาพรวม",
+    "row": {
+      "item": "รายการ",
+      "brand": "ยี่ห้อ",
+      "model": "รุ่น",
+      "year": "ปี",
+      "type": "ประเภท",
+      "price": "ราคา",
+      "engineSize": "ขนาด (cc)",
+      "engineType": "ประเภทเครื่อง",
+      "horsepower": "แรงม้า",
+      "torque": "แรงบิด",
+      "transmission": "ระบบเกียร์",
+      "frontBrake": "เบรกหน้า",
+      "rearBrake": "เบรกหลัง",
+      "frontSuspension": "โช้คหน้า",
+      "rearSuspension": "โช้คหลัง",
+      "weight": "น้ำหนัก",
+      "seatHeight": "ความสูงเบาะ",
+      "fuelCapacity": "ความจุน้ำมัน"
+    }
+  },
+  "favorites": {
+    "pageTitle": "รถที่ชื่นชอบ",
+    "subtitle": "บันทึก {{count}} รุ่นที่คุณสนใจ (เก็บในเครื่องคุณเท่านั้น)",
+    "empty": "ยังไม่มีรถที่ชื่นชอบ",
+    "emptyHint": "กดปุ่มหัวใจบนการ์ดรุ่นที่สนใจเพื่อบันทึก"
+  },
+  "card": {
+    "compare": "เปรียบเทียบ",
+    "addFavorite": "เพิ่มเข้าชื่นชอบ",
+    "removeFavorite": "เอาออกจากชื่นชอบ"
+  },
+  "compareBar": {
+    "selectedLabel": "เลือกแล้ว",
+    "compareBtn": "เปรียบเทียบ"
+  },
+  "type": {
+    "Sport": "Sport",
+    "Naked": "Naked",
+    "Adventure": "Adventure",
+    "Touring": "Touring",
+    "Cruiser": "Cruiser",
+    "Scooter": "Scooter"
+  },
+  "radar": {
+    "horsepower": "แรงม้า",
+    "torque": "แรงบิด",
+    "engineSize": "ขนาดเครื่อง",
+    "fuelCapacity": "ความจุน้ำมัน",
+    "lightWeight": "น้ำหนักเบา",
+    "note": "ค่าเปรียบเทียบ 0-100 (น้ำหนักเบา = ค่ายิ่งสูง ยิ่งเบา)"
+  },
+  "app": {
+    "routeNotFound": "404 - ไม่พบหน้านี้"
+  }
+}
