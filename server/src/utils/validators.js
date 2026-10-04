@@ -19,7 +19,7 @@ export const motorcycleSchema = z.object({
   engineType: z.string().max(100).optional().nullable().or(z.literal('')),
   horsepower: z.coerce.number().nonnegative().optional().nullable(),
   torque: z.coerce.number().nonnegative().optional().nullable(),
-  transmission: z.string().max(50).optional().nullable().or(z.literal('')),
+  transmission: z.string().max(100).optional().nullable().or(z.literal('')),
 
   frontBrake: z.string().max(100).optional().nullable().or(z.literal('')),
   rearBrake: z.string().max(100).optional().nullable().or(z.literal('')),
